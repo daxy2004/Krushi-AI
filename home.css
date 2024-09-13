@@ -1,11 +1,11 @@
-/* General styling for the body */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
   
-  /* Navbar styling */
+  
   .navbar {
     background-color: #333;
     padding: 1rem;
