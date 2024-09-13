@@ -1,0 +1,89 @@
+/* General styling for the chatbot container */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Chat window for displaying the messages */
+  .chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* General chat message styling */
+  .chat-message {
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 20px;
+    max-width: 70%;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+  
+  /* Bot message styling */
+  .bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+    color: #000;
+  }
+  
+  /* User message styling */
+  .user {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Input area for typing messages */
+  .input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Input field styling */
+  input[type='text'] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type='text']:focus {
+    border-color: #0084ff;
+  }
+  
+  /* Button styling for sending messages */
+  button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #006bb3;
+  }
+  
