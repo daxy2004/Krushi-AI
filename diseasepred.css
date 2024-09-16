@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #2c5f2d, #8bc34a);
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Container for the chatbot */
+h1 {
+  font-size: 36px;
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea styles */
+.diseasepred-textarea {
+  width: 100%;
+  max-width: 1000px;
+  height: 180px;
+  margin-top: 150px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  resize: none;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.diseasepred-textarea:focus {
+  outline: none;
+  box-shadow: 0 8px 25px rgba(44, 95, 45, 0.5);
+  transform: scale(1.02);
+}
+
+/* Button container to center the button */
+.diseasepred-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.diseasepred-button {
+  background-color: #ffd700;
+  color: #f2ff00;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.diseasepred-button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.diseasepred-button:focus {
+  outline: none;
+  background-color: #ffd700;
+  box-shadow: 0 8px 25px rgba(44, 95, 45, 0.5);
+}
+
+/* Answer section */
+.diseasepred-answer {
+  font-size: 18px;
+  color: #fff;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  max-width: 1000px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
+}
+
+.diseasepred-answer:hover {
+  transform: scale(1.02);
+}
+
+/* Logo positioning and size */
+.diseasepred-logo {
+  display: block;
+  margin: 0 auto 20px;
+  height: 50px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Chatbot container */
+.diseasepred-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+  .diseasepred-textarea {
+    max-width: 100%;
+    height: 140px;
+  }
+
+  .diseasepred-answer {
+    font-size: 16px;
+  }
+
+  .diseasepred-button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .diseasepred-container {
+    padding: 20px;
+  }
+}
